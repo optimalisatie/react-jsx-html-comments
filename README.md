@@ -20,21 +20,19 @@ Include the following javascript in your application to enable the `<react-comme
  *  <!--Comment-text, e.g. [if lte IE 9]><script ... /><![endif]-->
  */
 var proto = Object.create(HTMLElement.prototype, {
-name: {
-    get: function() { return 'React HTML Comment'; }
-},
-createdCallback: { value: function() {
+ name: { get: function() { return 'React HTML Comment'; } },
+ createdCallback: { value: function() {
 
-    /**
-     * Firefox fix, is="null" prevents attachedCallback
-     * @link https://github.com/WebReflection/document-register-element/issues/22
-     */
-    this.is = '';
-    this.removeAttribute('is');
-}},
-attachedCallback: { value: function() {
-    this.outerHTML = '<!--' + this.textContent + '-->';
-}}
+  /**
+   * Firefox fix, is="null" prevents attachedCallback
+   * @link https://github.com/WebReflection/document-register-element/issues/22
+   */
+  this.is = '';
+  this.removeAttribute('is');
+ } },
+ attachedCallback: { value: function() {
+  this.outerHTML = '<!--' + this.textContent + '-->';
+ } }
 });
 document.registerElement('react-comment', { prototype: proto });
 ```
