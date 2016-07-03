@@ -7,7 +7,7 @@ The solution depends on [document.registerElement](https://developer.mozilla.org
 
 You can read more about Web Components at [www.webcomponents.org](http://webcomponents.org/).
 
-Include the following javascript in your application.
+Include the following javascript in your application to enable the `<react-comment>` Web Component.
 
 ```javascript
 /**
