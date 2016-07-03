@@ -1,7 +1,7 @@
 # React / JSX HTML Comments
 Enable HTML comments (e.g. conditional IE comments) in React components and JSX using a [Web Component](https://developer.mozilla.org/en-US/docs/Web/Web_Components).
 
-This repository is intended to share a solution to include native HTML comments in React components and JSX. It uses a Web Component (custom HTML element) to transform text to a native HTML comment.
+This repository is intended to share a solution to include native HTML comments in React components and JSX. It uses a Web Component (custom HTML element) to transform text to a native HTML comment, without a container.
 
 The solution depends on [document.registerElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/registerElement) that requires a polyfill for most browsers, e.g. [WebReflection/document-register-element](https://github.com/WebReflection/document-register-element).
 
