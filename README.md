@@ -5,7 +5,7 @@ This repository is intended to share a solution to include native HTML comments 
 
 The solution depends on [document.registerElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/registerElement) that requires a Polyfill for most browsers, e.g. [WebReflection/document-register-element](https://github.com/WebReflection/document-register-element).
 
-``javascript
+```javascript
 var proto = Object.create(HTMLElement.prototype, {
 name: {
     get: function() { return 'React Comment'; }
@@ -23,4 +23,4 @@ attachedCallback: { value: function() {
 }}
 });
 document.registerElement('ws-c', { prototype: proto });
-``
+```
