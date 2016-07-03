@@ -21,7 +21,7 @@ Include the following javascript in your application to enable the `<react-comme
  */
 var proto = Object.create(HTMLElement.prototype, {
 name: {
-    get: function() { return 'React Comment'; }
+    get: function() { return 'React HTML Comment'; }
 },
 createdCallback: { value: function() {
 
