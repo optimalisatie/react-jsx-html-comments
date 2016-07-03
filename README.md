@@ -5,7 +5,7 @@ This repository is intended to share a solution to include native HTML comments 
 
 The solution depends on [document.registerElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/registerElement) that requires a polyfill for most browsers, e.g. [WebReflection/document-register-element](https://github.com/WebReflection/document-register-element).
 
-You can read more about Web Components at [www.webcomponents.org](http://webcomponents.org/).
+You can read more about Web Components at [www.webcomponents.org](http://webcomponents.org/) and [facebook.github.io/react/docs/webcomponents.html](https://facebook.github.io/react/docs/webcomponents.html).
 
 Include the following javascript in your application to enable the `<react-comment>` Web Component.
 
