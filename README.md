@@ -36,3 +36,10 @@ var proto = Object.create(HTMLElement.prototype, {
 });
 document.registerElement('react-comment', { prototype: proto });
 ```
+
+To include a comment in your JSX or React component, simply include the `<react-comment>` tag with the comment-text as content.
+
+```jsx
+<footer>Copyright {year}, Website.com</footer>
+<react-comment>Page loaded in {loadtime} seconds - React CMS - http://react-cms.com</react-comment>
+```
