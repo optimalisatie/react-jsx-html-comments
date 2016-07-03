@@ -7,7 +7,7 @@ The solution depends on [document.registerElement](https://developer.mozilla.org
 
 You can read more about Web Components at [www.webcomponents.org](http://webcomponents.org/) and [facebook.github.io/react/docs/webcomponents.html](https://facebook.github.io/react/docs/webcomponents.html).
 
-Include the following javascript in your application to enable the `<react-comment>` Web Component. You can rename the component, e.g. `<c>`.
+Include the following javascript in your application to enable the `<react-comment>` Web Component. 
 
 ```javascript
 /**
