@@ -11,7 +11,7 @@ Include the following javascript in your application to enable the `<react-comme
 
 ```javascript
 /**
- * Create <react-comment> Web Component
+ * <react-comment> Web Component
  *
  * @usage
  *  <react-comment>Comment-text, e.g. [if lte IE 9]><script ... /><![endif]</react-comment>
